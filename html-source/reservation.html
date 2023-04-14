@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        .my-footer {
+            background-color: brown;
+            margin-top: 1.5em;
+            height: 5em;
+            padding: 1em;
+            color: white;
+            font-size: 80%;
+        }
+
+        .room-image {
+            max-width: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Rooms
+                        </a>
+                        <ul class="dropdown-menu">
+                            <!-- <li><a class="dropdown-item" href="/rooms/room-1">Room 1</a></li>
+                            <li><a class="dropdown-item" href="/rooms/room-2">Room 2</a></li> -->
+                            <li><a class="dropdown-item" href="room-1.html">Room 1</a></li>
+                            <li><a class="dropdown-item" href="room-2.html">Room 2</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="reservation.html">Book now</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+                <h1 class="h1 mt-5">Search for Availability</h1>
+                <form action="" method="post">
+                    <div class="row">
+                        <div class="mb-3 col">
+                            <label for="start_date" class="form-label">Starting Date</label>
+                            <input name="start_date" type="date" class="form-control" id="start_date"
+                                aria-describedby="startdateHelp" required>
+                            <div id="startdateHelp" class="form-text">Enter Starting Date in YYYY-MM-DD.</div>
+                        </div>
+                        <div class="mb-3 col">
+                            <label for="end_date" class="form-label">End Date</label>
+                            <input name="end_date" type="date" class="form-control" id="end_date"
+                                aria-describedby="end_dateHelp" required>
+                            <div id="end_dateHelp" class="form-text">Enter End Date in YYYY-MM-DD.</div>
+                        </div>
+
+                    </div>
+                    <button type="submit" class="btn btn-primary">Search</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="row my-footer">
+        <div class="col">
+            LEFT
+        </div>
+        <div class="col">
+            MIDDLE
+        </div>
+        <div class="col">
+            RIGHT
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.min.js"
+        integrity="sha384-heAjqF+bCxXpCWLa6Zhcp4fu20XoNIA98ecBC1YkdXhszjoejr5y9Q77hIrv8R9i"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
