@@ -1,6 +1,7 @@
 package main
 
 import (
+	"encoding/gob"
 	"fmt"
 	"log"
 	"net/http"
@@ -8,6 +9,7 @@ import (
 
 	"github.com/TobiasSchnier/bookings/internal/config"
 	"github.com/TobiasSchnier/bookings/internal/handlers"
+	"github.com/TobiasSchnier/bookings/internal/models"
 	"github.com/TobiasSchnier/bookings/internal/render"
 
 	"github.com/alexedwards/scs/v2"
@@ -22,6 +24,9 @@ var app config.AppConfig
 var session *scs.SessionManager
 
 func main() {
+	// what am i going to put in session?
+	gob.Register(models.Reservation{})
+
 	// change this to true in PROD
 	app.InProduction = false
 
